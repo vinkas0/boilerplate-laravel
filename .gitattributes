@@ -6,3 +6,6 @@
 .gitattributes merge=ours
 readme.md merge=ours
 composer.json merge=ours
+/public/css/app.css merge=ours
+/public/css/app.css.map merge=ours
+/public/js/app.js merge=ours

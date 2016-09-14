@@ -4,3 +4,31 @@ a {
 img {
   max-width: 100%;
 }
+.brand-header .brand-logo {
+  max-height: 40px;
+}
+.app-header {
+  background-color: $app-header-bg-color;
+  height: $app-header-height;
+}
+.mdl-layout__drawer>.mdl-layout-title, .mdl-layout__drawer>.mdl-layout__title {
+  padding-right: 40px;
+}
+.app-header .mdl-layout-title, .app-header .mdl-layout__title {
+  color: $app-header-title-color;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.app-header .mdl-navigation__link {
+  font-weight:  bold;
+}
+.mobile-layout-title {
+  line-height: 40px;
+  color: $app-header-title-color;
+  font-size: 24px;
+}
+.mobile-layout-title > img.brand-logo {
+  float: left;
+  margin-right: 12px;
+}

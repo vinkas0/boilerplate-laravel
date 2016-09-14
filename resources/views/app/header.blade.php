@@ -3,9 +3,12 @@
     {{ config('app.name') }}
   </a>
 
-  <div class="visa-navigation-container visible-lg-block visible-md-block">
-    <nav class="visa-navigation mdl-navigation">
+  <div class="app-navigation-container visible-lg-block visible-md-block">
+    <nav class="app-navigation mdl-navigation">
       <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
     </nav>
   </div>
+  <!-- Add spacer, to align navigation to the right in desktop -->
+  <div class="mdl-layout-spacer hidden-xs"></div>
+  <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Call to action</a>
 </div>

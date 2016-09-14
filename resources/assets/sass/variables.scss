@@ -3,3 +3,7 @@
 
 $layout-header-bg-color: #fff;
 $layout-header-text-color: unquote("rgb(#{$palette-grey-800})");
+
+$app-header-bg-color: unquote("rgb(#{$palette-grey-50})");
+$app-header-title-color: unquote("rgb(#{$palette-grey-800})");
+$app-header-height: 80px;

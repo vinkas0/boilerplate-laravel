@@ -1,91 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('content')
+  <h3>MO Boilerplate for Laravel</h3>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ex ac justo sollicitudin malesuada. Aenean consectetur, velit porttitor placerat venenatis, purus quam molestie leo, ut volutpat eros sapien vitae lorem. In tincidunt mollis vehicula. Nulla accumsan ac felis vitae auctor. Sed velit nulla, volutpat at fringilla euismod, facilisis nec nisl. Curabitur iaculis tellus nulla, eu sodales ex malesuada eu. Integer a semper neque. In maximus neque tortor, eu tristique metus efficitur a. Nam sit amet pellentesque nibh. Nulla ac mi sit amet elit placerat efficitur. Aliquam erat volutpat. Phasellus vitae dapibus diam. Quisque pulvinar porta auctor. Maecenas eu turpis sit amet neque tempor semper. Suspendisse in sapien viverra, lobortis orci sit amet, pharetra ex. Nullam lobortis porttitor mi, vitae viverra augue semper sed.</p>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+  <p>Nunc sed blandit turpis. Sed ex nisi, ullamcorper vitae pulvinar eget, aliquam sed orci. Cras vitae elementum dolor. Cras sagittis lacus quis elementum consequat. Phasellus ullamcorper dolor nec laoreet condimentum. Pellentesque venenatis, urna in dictum posuere, metus tortor iaculis libero, at ornare ipsum eros sed eros. Nunc eleifend imperdiet blandit. Sed sit amet tortor diam.</p>
 
-            .full-height {
-                height: 100vh;
-            }
+  <p>Cras dictum mi at metus egestas mollis. Fusce convallis ligula in placerat ultrices. Praesent commodo enim nisi, eu efficitur massa cursus sed. Nulla facilisi. Ut id lectus risus. Duis sit amet urna et eros dignissim mattis. Vivamus auctor elit non consequat finibus. Maecenas semper erat facilisis tortor consectetur semper. Sed rutrum vehicula ultricies.</p>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+  <p>Vestibulum pharetra purus auctor, condimentum dui et, ullamcorper magna. Donec id tempus sem, a ullamcorper magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consectetur pellentesque nisi, ac venenatis tortor tristique nec. Duis eget ligula suscipit, varius nisl sed, efficitur ex. Fusce quis nisi quis velit condimentum malesuada quis ac nisl.</p>
 
-            .position-ref {
-                position: relative;
-            }
+  <p>Aenean porta, nibh ut volutpat pharetra, mauris orci aliquam turpis, ac tempus massa tellus id nisl. Integer pellentesque enim ipsum, nec imperdiet nibh placerat non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel tincidunt nulla, quis laoreet purus. Curabitur ut lorem nec velit volutpat interdum non sed massa. Phasellus dolor tellus, egestas sit amet facilisis ut, ultrices at mi. Sed a placerat arcu. Aliquam hendrerit a enim ac sagittis.</p>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@endsection

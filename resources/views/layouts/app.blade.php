@@ -8,7 +8,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name') }}</title>
+  <title>{{ config('app.name') }} - {{ config('brand.name') }}</title>
 
   <!-- Styles -->
   <link href="/css/app.css" rel="stylesheet">
@@ -22,41 +22,29 @@
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <div class="brand-header mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title hidden-sm hidden-xs">
-          <a href="{{ config('app.url') }}">
-            {{ config('app.name') }}
-          </a>
-        </span>
-        <!-- Add spacer, to align navigation to the right in desktop -->
-        <div class="mdl-layout-spacer visible-lg-block visible-md-block"></div>
-        <!-- Navigation -->
-        <div class="brand-navigation-container visible-lg-block visible-md-block">
-          <nav class="brand-navigation mdl-navigation">
-            @if (Auth::guest())
-            <a class="mdl-navigation__link" href="{{ url('/login') }}">Login</a>
-            <a class="mdl-navigation__link" href="{{ url('/register') }}">Register</a>
-            @else
-            <a class="mdl-navigation__link"  href="{{ url('/logout') }}"
-            onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">
-            Logout</a>
-            @endif
-          </nav>
-        </div>
-        <span class="mdl-layout-title hidden-lg hidden-md">
-          <a href="{{ config('app.url') }}">
-            {{ config('app.name') }}
-          </a>
-        </span>
-      </div>
+    <div class="mdl-layout__header">
+      @include('brand.header')
+      @include('app.header')
     </div>
+
+    @include('drawer.hamburger')
+    <div class="ribbon ribbon-top"></div>
 
     <main class="app-content mdl-layout__content">
       <a name="top"></a>
-      @yield('content')
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="page-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--10-col">
+          @yield('content')
+        </div>
+      </div>
     </main>
+
+    <div class="ribbon ribbon-bottom" style="background-color: #f5f5f5;"></div>
+    <footer>
+      @include('app.footer')
+      @include('brand.footer')
+    </footer>
   </div>
 
   <!-- Scripts -->

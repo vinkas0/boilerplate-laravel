@@ -1,7 +1,7 @@
-# Vinkas Boilerplate for Laravel
+# MO Boilerplate for Laravel
 
-Vinkas Boilerplate template for Laravel 5.3 php framework
+Boilerplate template for Vinkas MO using Laravel 5.3 php framework
 
 ## License
 
-Vinkas Boilerplate is open-sourced software licensed under the [MIT license](LICENSE.txt).
+MO Boilerplate is open-sourced software licensed under the [MIT license](LICENSE.txt).

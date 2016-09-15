@@ -6,7 +6,7 @@ trait AuthenticatesUsers
 {
 
   protected function getSeverUrl() {
-    return url(config('vinkas.authentication_server_url'));
+    return url(config('mo.authentication_server_url'));
   }
 
   public function login() {

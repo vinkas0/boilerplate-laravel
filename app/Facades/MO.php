@@ -5,7 +5,7 @@ namespace App\Facades;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Route;
 
-class Vinkas extends Facade
+class MO extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -14,7 +14,7 @@ class Vinkas extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'vinkas';
+        return 'mo';
     }
 
     /**

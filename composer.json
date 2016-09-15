@@ -1,7 +1,7 @@
 {
-    "name": "vinkas/boilerplate-laravel",
-    "description": "Vinkas Boilerplate template for Laravel 5.3 php framework",
-    "keywords": ["boilerplate", "vinkas", "laravel"],
+    "name": "vinkas/mo-boilerplate-laravel",
+    "description": "Boilerplate template for Vinkas MO using Laravel 5.3 php framework",
+    "keywords": ["boilerplate", "mo", "vinkas", "laravel"],
     "license": "MIT",
     "type": "project",
     "authors": [

@@ -1,9 +1,13 @@
 // Material Design Lite
 @import "node_modules/material-design-lite/src/color-definitions";
 
-$layout-header-bg-color: #fff;
+$layout-header-bg-color: unquote("rgb(#{$color-white})");
 $layout-header-text-color: unquote("rgb(#{$palette-grey-800})");
+
+$grid-phone-gutter: 0px;
 
 $app-header-bg-color: unquote("rgb(#{$palette-grey-50})");
 $app-header-title-color: unquote("rgb(#{$palette-grey-800})");
 $app-header-height: 80px;
+
+$layout-drawer-bg-color: unquote("rgb(#{$color-white})");
